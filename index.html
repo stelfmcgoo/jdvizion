@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo"></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About Me</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Welcome to <span>JD Vizion</span></h1>
+            <div class="text-animate"><h3>Bring your vision to life.</h3></div>
+            <p>Capturing moments, crafting stories. Through the lens, I turn fleeting instants into timeless visuals—whether it's stunning photography or cinematic videography. From portraits to events, brands to landscapes, I bring your vision to life with creativity, passion, and a keen eye for detail.</p>
+            <div class="home-btn">
+                <a href="#contact">Book Me</a>
+                <a href="#gallery"><i class='bx bxs-right-arrow'></i></a>
+            </div>
+        </div>
+        <div class="socials">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+
+        <div class="home-imgHover"></div>
+    </section>
+
+    <!-- CAROUSEL OR GALLERY-->
+    <section class="gallery" id="gallery">
+        <h2>GALLERY</h1>
+        <p>Capturing moments that tell your unique story through a lens of creativity and passion.</p>
+        
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <!-- Images will be added dynamically with JavaScript -->
+            </div>
+            
+            <!-- Navigation buttons now outside the controls div -->
+            <button class="carousel-btn prev-btn"><i class='bx bx-chevron-left'></i></button>
+            <button class="carousel-btn next-btn"><i class='bx bx-chevron-right'></i></button>
+            
+            <!-- Indicators now directly in the container -->
+            <div class="carousel-indicators"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME -->
+    <section class="about" id="about">
+        <h2 class="heading">MEET JOANNA</h2>
+        <div class="about-img">
+            <img src="images/about-me.jpg" alt="About Me">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3 class="skills">Videographer | Photographer | Producer</h3>
+            <p>I'm passionate about capturing moments that tell your unique story. Whether it's a portrait, event, brand, or landscape, I bring your vision to life with creativity, passion, and a keen eye for detail. <br>Let's create something beautiful together.</p>
+
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+        <h2 class="heading">SERVICES</h2>
+    <div class="services-row">
+        <div class="services-column">
+            <h3 class="title">Photography</h3>
+
+            <div class="services-box">
+                <div class="services-content">
+                    <div class="investment">
+                        <h3>Package #1 <span>$$$</span></h3>
+                    </div>
+                    <div class="investment">
+                        <h3>Package #2 <span>$$$</span></h3>
+                    </div>
+                    <div class="investment">
+                        <h3>Package #3 <span>$$$</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services-column">
+            <h3 class="title">Videography</h3>
+
+            <div class="services-box">
+                <div class="services-content">
+                    <div class="investment">
+                        <h3>Package #1 <span>$$$</span></h3>
+                        <div class="bar"><span></span></div>
+                    </div>
+                    <div class="investment">
+                        <h3>Package #2 <span>$$$</span></h3>
+                    </div>
+                    <div class="investment">
+                        <h3>Package #3 <span>$$$</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="services-column">
+            <h3 class="title">Packages</h3>
+
+            <div class="services-box">
+                <div class="services-content">
+                    <div class="investment">
+                        <h3>Package #1 <span>$$$</span></h3>
+                    </div>
+                    <div class="investment">
+                        <h3>Package #2 <span>$$$</span></h3>
+                    </div>
+                    <div class="investment">
+                        <h3>Package #3 <span>$$$</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+    <!-- CONTACT -->
+     <section class="contact" id="contact">
+        <h2 class="heading">CONTACT <span>ME</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Full Name" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Address" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field">
+                    <input type="text" placeholder="Phone Number" required>
+                    <span class="focus"></span>
+                </div>
+                <div class="input-field">
+                    <input type="text" placeholder="Email Subject" required>
+                    <span class="focus"></span>
+                </div>
+            </div>
+
+            <div class="textarea-field">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Message Here..." required></textarea>
+                <span class="focus"></span>
+            </div>
+
+            <div class="home-btn btns">
+                <button type="submit" class="btn">Submit</button>
+            </div>
+
+        </form>
+     </section>
+
+    <button id="back-to-top-btn" aria-label="Back to top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+      </button>
+    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/backtotop.js"></script>
+</body>
+<footer>
+    <div class="footer">
+        <p class="endnote">FOOTER GOES HERE</p>
+    </div>
+</footer>
+</html>
