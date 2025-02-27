@@ -837,6 +837,13 @@ h3 label
     bottom: 0;
 }
 
+.endnote   
+{
+    color: var(--black);
+    font-weight: 500;
+    font-size: 12px;
+}
+
 /* BACK TO TOP */
 
 #back-to-top-btn {
