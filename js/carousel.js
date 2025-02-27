@@ -2,31 +2,31 @@ document.addEventListener('DOMContentLoaded', function() {
   // Carousel Images - Add your image paths and metadata here
   const carouselImages = [
       {
-          src: '../images/carousel/crsl-1.jpg',
+          src: 'images/carousel/crsl-1.jpg',
           alt: 'n/a',
           caption: 'n/a',
           orientation: 'landscape'
       },
       {
-          src: '../images/carousel/crsl-2.jpg',
+          src: 'images/carousel/crsl-2.jpg',
           alt: 'n/a',
           caption: 'n/a',
           orientation: 'landscape'
       },
       {
-          src: '../images/carousel/crsl-3.jpg',
+          src: 'images/carousel/crsl-3.jpg',
           alt: 'n/a',
           caption: 'n/a',
           orientation: 'portrait'
       },
       {
-          src: '../images/carousel/crsl-4.jpg',
+          src: 'images/carousel/crsl-4.jpg',
           alt: 'n/a',
           caption: 'n/a',
           orientation: 'landscape'
       },
       {
-          src: '../images/carousel/crsl-5.jpg',
+          src: 'images/carousel/crsl-5.jpg',
           alt: 'n/a',
           caption: 'n/a',
           orientation: 'landscape'
