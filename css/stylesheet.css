@@ -1,0 +1,631 @@
+/* Yatra One - Regular 400 || Montserrat - 100 to 900 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yatra+One&display=swap');
+
+:root
+{
+    --jdred: #d10000;
+    --white: white;
+    --black: black;
+    --lightjd: #ce6969;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Yatra One';
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+}
+
+html
+{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background: var(--black);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    z-index: 100;
+    box-shadow: var(--white) 0 -10px 20px 1px; 
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.logo
+{
+    position: relative;
+    background: url(../images/logo-white.svg) no-repeat center;
+    background-size: 150px;
+    height: 80px;
+    width: 150px;
+}
+
+a.logo:hover
+{
+    background: url(../images/playbutton.svg) no-repeat center;
+    background-size: 15px;
+    transform: scale(5);
+    opacity: 1;
+    transition: transform 1s cubic-bezier(0.22, 1.5, 0.36, 1), opacity 1s ease-in-out;
+}
+
+
+.navbar a
+{   
+    font-size: 1.7rem;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 3.5rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active
+{
+    color: var(--black);
+    border-radius: 100px;
+    padding: 10px;
+    background-color: var(--white);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#menu-icon  
+{
+    font-size: 3.6rem;
+    color: var(--white);
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    position: relative; /* Add this to ensure proper positioning */
+    width: 100%; /* Ensure full width */
+}
+
+section.home {
+    display: flex;
+    align-items: center;
+    background-image: url(../images/background-light.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-content
+{
+    max-width: 60rem;
+}
+
+.home-content h1
+{
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.home-content .text-animate
+{
+    position: relative;
+    width: 37.5rem;
+}
+
+.home-content .text-animate h3
+{
+    font-size: 3rem;
+    color: transparent;
+    -webkit-text-stroke: .7px;
+    background-image: linear-gradient(var(--jdred), var(--jdred));
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: homeBgText 6s linear infinite;
+    animation-delay: 2.5s;
+}
+
+.home-content .text-animate h3::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid var(--jdred);
+    z-index: -1;
+    animation: homeCursorText 6s linear infinite;
+    animation-delay: 2.5s;
+}
+
+
+
+.home-content p
+{
+    font-size: 1.6rem;
+    margin: 2rem 0 4rem;
+}
+
+.home-btn
+{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34rem;
+    height: 5rem;
+}
+
+
+.home-btn a
+{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: var(--jdred);
+    border: 2px solid var(--jdred);
+    border-radius: 100px;
+    font-size: 20px;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.home-btn a:hover
+{
+    color:var(--jdred);
+    font-weight: 500;
+}
+
+.home-btn a:nth-child(2)
+{   
+    padding-left:5px;
+    margin-right: 60px;
+    width: 70px;
+    font-size: 30px;
+    background: transparent;
+    color: var(--jdred);
+    font-weight: 500;
+}
+
+.home-btn a:nth-child(2):hover
+{
+    color: var(--white);
+}
+
+.home-btn a:nth-child(2)::before
+{
+    background-color: var(--jdred);
+}
+
+.home-btn a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--black);
+    z-index: -1;
+    transition: .2s;
+}
+
+.home-btn a:hover::before
+{
+    width: 100%;
+}
+
+.socials
+{
+    position: absolute;
+    bottom: 40px;
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.socials a
+{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid var(--jdred);
+    border-radius: 50%;
+    font-size: 25px;
+    color: var(--jdred);
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.socials a:hover
+{
+    color: var(--white);
+    font-weight: 200;
+}
+
+.socials a::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--jdred);
+    z-index: -1;
+    transition: .1s;
+}
+
+.socials a:hover::before
+{
+    width: 100%;
+}
+
+
+.home-imgHover
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    transition: 2.5s;
+    animation: maniApActivateHover .1s forwards;
+    animation-delay: 4s;
+    pointer-events: none;
+}
+
+.home-imgHover:hover
+{
+    background: var(--black);
+    opacity: .5;
+}
+
+h1 span,
+h2 span,
+h3 span
+{
+    color: var(--jdred)
+}
+
+section h2 {
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    color: var(--jdred);
+}
+
+/* ----- CAROUSEL ----- */
+/* Carousel Styles */
+
+.carousel-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 4rem auto 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 500px;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.landscape {
+    width: 100%;
+    height: auto;
+}
+
+.portrait {
+    height: 100%;
+    width: auto;
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 60px; /* Increased from 20px to make room for indicators */
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    font-size: 1.6rem;
+    opacity: 0;
+    z-index: 5; /* Make sure it's above background but below controls */
+}
+
+.carousel-slide:hover .carousel-caption {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.carousel-slide:hover .carousel-image {
+    transform: scale(1.05);
+}
+
+/* Carousel Navigation Buttons - Now positioned at middle height */
+.carousel-btn {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 2.5rem;
+    transition: background 0.3s ease;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20; /* Ensure buttons are above everything */
+}
+
+.prev-btn {
+    left: 20px;
+}
+
+.next-btn {
+    right: 20px;
+}
+
+.carousel-btn:hover {
+    background: var(--jdred);
+}
+
+/* Indicators moved to bottom */
+.carousel-indicators {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    z-index: 15; /* Above captions but below buttons */
+}
+
+.indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.indicator.active {
+    background: var(--jdred);
+    transform: scale(1.2);
+}
+
+/* Remove the container for controls since we're positioning elements individually */
+.carousel-controls {
+    display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .carousel-track {
+        height: 350px;
+    }
+
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
+    }
+
+    .carousel-caption {
+        font-size: 1.4rem;
+        padding: 0.7rem;
+        bottom: 50px; /* Adjusted for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-track {
+        height: 250px;
+    }
+
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 1.8rem;
+    }
+    
+    .carousel-caption {
+        bottom: 40px; /* Adjusted for even smaller screens */
+    }
+}
+
+/* Gallery section enhancements */
+section.gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+.gallery p {
+    font-size: 1.6rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/* About Me */
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: var(--black);
+    padding-bottom: 6rem;
+}
+
+.heading
+{
+    font-size: 5rem;
+    text-align: center;
+}
+
+.about-img
+{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-img img
+{
+    width: 90%;
+    border-radius: 50%;
+    border: .2rem solid var(--jdred);
+}
+
+.about-img .circle-spin
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border-top: .2rem solid transparent;
+    border-bottom: .2rem solid transparent;
+    border-left: .2rem solid var(--jdred);
+    border-right: .2rem solid var(--jdred);
+}
+
+.about-content
+{
+    text-align: center;
+}
+
+.about-content h3
+{
+    font-size: 2.6rem;
+}
+
+.about-content p
+{
+    font-size: 1.6rem;
+    margin: 2rem;
+}
+
+.home-btn.btns
+{
+    display: inline-block;
+    width: 15rem;
+}
+
+/* KEYFRAMES ANIMATION */
+
+@keyframes maniApActivateHover
+{
+   100%
+    {
+        pointer-events: auto;
+    }
+}
+/*
+@keyframes showRight 
+{
+    100%
+    {
+        width: 0;
+    }
+
+}*/
+
+
+
+@keyframes homeBgText
+{
+    0%,10%,100%
+    {
+        background-position: -38rem 0;
+    }
+    65%,85%
+    {
+        background-position: 0 0;
+    }
+}
+
+@keyframes homeCursorText
+{
+    0%,10%,100%
+    {
+        width: 0;
+    }
+    65%,78%,85%
+    {
+        width: 100%;
+        opacity: 1;
+    }
+    75%,81%
+    {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <title>Test</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"></a>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#about">About Me</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h1>Welcome to <span>JD Vizion</span></h1>
+            <div class="text-animate"><h3>Bring your vision to life.</h3></div>
+            <p>Capturing moments, crafting stories. Through the lens, I turn fleeting instants into timeless visuals—whether it's stunning photography or cinematic videography. From portraits to events, brands to landscapes, I bring your vision to life with creativity, passion, and a keen eye for detail.</p>
+            <div class="home-btn">
+                <a href="contact.html">Book Me</a>
+                <a href="portfolio.html"><i class='bx bxs-right-arrow'></i></a>
+            </div>
+        </div>
+        <div class="socials">
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+        </div>
+
+        <div class="home-imgHover"></div>
+    </section>
+
+    <!-- CAROUSEL OR GALLERY-->
+    <section class="gallery" id="gallery">
+        <h1>GALLERY</h1>
+        <p>Capturing moments that tell your unique story through a lens of creativity and passion.</p>
+        
+        <div class="carousel-container">
+            <div class="carousel-track">
+                <!-- Images will be added dynamically with JavaScript -->
+            </div>
+            
+            <!-- Navigation buttons now outside the controls div -->
+            <button class="carousel-btn prev-btn"><i class='bx bx-chevron-left'></i></button>
+            <button class="carousel-btn next-btn"><i class='bx bx-chevron-right'></i></button>
+            
+            <!-- Indicators now directly in the container -->
+            <div class="carousel-indicators"></div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h2 class="heading">About <span>Me</span></h2>
+        <div class="about-img">
+            <img src="images/about-me.jpg" alt="About Me">
+            <span class="circle-spin"></span>
+        </div>
+        <div class="about-content">
+            <h3>Videographer | Photographer</h3>
+            <p>Photographer, videographer, and storyteller. I'm passionate about capturing moments that tell your unique story. Whether it's a portrait, event, brand, or landscape, I bring your vision to life with creativity, passion, and a keen eye for detail. Let's create something beautiful together.</p>
+
+            <div class="home-btn btns">
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
+</body>
+</html>
