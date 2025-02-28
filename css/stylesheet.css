@@ -1,5 +1,5 @@
 /* Yatra One - Regular 400 || Montserrat - 100 to 900 */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Yatra+One&display=swap');
+@import url("https://use.typekit.net/zvq7nrs.css");
 
 :root
 {
@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', 'Yatra One';
+    font-family: 'elza-condensed', 'adobe-caslon-pro';
     scroll-behavior: smooth;
     outline: none;
     border: none;
@@ -33,6 +33,15 @@ body {
     flex-direction: column;
 }
 
+h1, h2, h3
+{
+    font-family: 'elza-condensed';
+}
+
+p
+{
+    font-family: 'adobe-caslon-pro';
+}
 
 .header {
     position: fixed;
@@ -69,20 +78,20 @@ a.logo:hover
 
 .navbar a
 {   
-    font-size: 1.7rem;
+    font-size: 2.4rem;
     color: var(--white);
     text-decoration: none;
-    font-weight: 500;
-    margin-left: 3.5rem;
+    margin-left: 2rem;
     transition: .3s;
+    letter-spacing: 1px;
 }
 
 .navbar a:hover,
 .navbar a.active
 {
     color: var(--black);
-    border-radius: 100px;
-    padding: 10px;
+    border-radius: 50px;
+    padding: 10px 10px 8px 10px;
     background-color: var(--white);
     font-weight: 600;
     text-decoration: none;
@@ -118,7 +127,7 @@ section.home {
 
 .home-content h1
 {
-    font-size: 5rem;
+    font-size: 7rem;
     font-weight: 700;
     line-height: 1;
 }
@@ -131,12 +140,14 @@ section.home {
 
 .home-content .text-animate h3
 {
-    font-size: 3rem;
+    font-size: 4.5rem;
+    font-weight: 600;
     color: transparent;
     -webkit-text-stroke: .7px;
     background-image: linear-gradient(var(--jdred), var(--jdred));
     background-repeat: no-repeat;
     -webkit-background-clip: text;
+    background-clip: text;
     background-position: 0 0;
     animation: homeBgText 6s linear infinite;
     animation-delay: 2.5s;
@@ -160,8 +171,8 @@ section.home {
 
 .home-content p
 {
-    font-size: 1.6rem;
-    margin: 2rem 0 4rem;
+    font-size: 2rem;
+    margin: 2rem 0 3rem;
 }
 
 .home-btn
@@ -169,27 +180,27 @@ section.home {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 34rem;
+    width: 31rem;
     height: 5rem;
 }
 
 
 .home-btn a
-{
+{   
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     width: 150px;
-    height: 100%;
+    height: 90%;
     background: var(--jdred);
     border: 2px solid var(--jdred);
     border-radius: 100px;
-    font-size: 20px;
+    font-size: 25px;
     color: var(--white);
     text-decoration: none;
-    font-weight: 400;
     letter-spacing: 1px;
+    padding-top: 3px;
     z-index: 1;
     overflow: hidden;
     transition: .3s;
@@ -222,9 +233,10 @@ section.home {
 .home-btn a:nth-child(2)
 {   
     padding-left:5px;
+    padding-top: 1px;
     margin-right: 60px;
     width: 70px;
-    font-size: 30px;
+    font-size: 25px;
     background: transparent;
     color: var(--jdred);
     font-weight: 500;
@@ -366,9 +378,9 @@ span
 }
 
 
-section h2 {
+section h2 
+{
     margin-top: 40px;
-    font-size: 5rem;
     margin-bottom: 2rem;
     color: var(--white);
 }
@@ -580,7 +592,7 @@ h3.skills
 
 .heading
 {
-    font-size: 5rem;
+    font-size: 5.5rem;
     text-align: center;
 }
 
@@ -641,10 +653,11 @@ h3.skills
 
 .about-content p
 {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     margin: 2rem;
     color: var(--black);
     font-weight: 500;
+    line-height: 1.2;
 }
 
 .home-btn.btns
@@ -698,10 +711,10 @@ h3.skills
 
 .services-content .investment h3
 {
-    font-size: 1.7rem;
+    font-size: 2rem;
     display: flex;
     justify-content: space-between;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 div.investment
@@ -717,6 +730,8 @@ div.investment:last-child
 h3 span
 {
     color: var(--black);
+    font-weight: 100;
+    font-size: 1.8rem;
 }
 
 .investment span
@@ -724,15 +739,14 @@ h3 span
     font-style: italic;
 }
 
-h3 label
+.investment h3
 {
-    cursor: pointer;
-    color: var(--jdred);
+    margin-bottom: 5px;
 }
 
 .investment p
 {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin-left: 2rem;
     font-weight: 500;
 }
@@ -787,6 +801,8 @@ h3 label
     background: #fff;
     border-radius: .6rem;
     border: .2rem solid var(--jdred);
+    font-family: 'adobe-caslon-pro';
+    font-weight: 600;
 }
 
 .contact form .input-box .input-field input::placeholder,
@@ -808,8 +824,9 @@ h3 label
 }
 
 .contact form .home-btn.btns .btn
-{
-    margin-top: 2rem;
+{   
+    padding-top: 3px;
+    margin-top: 1.5rem;
     cursor: pointer;
 }
 
@@ -819,6 +836,18 @@ h3 label
     width: 100%;
 }
 
+.home-btn .btn::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--white);
+    z-index: -1;
+    transition: .2s;
+}
 
 
 
@@ -874,7 +903,7 @@ h3 label
   
   #back-to-top-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);|
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
   
   #back-to-top-btn:active {
@@ -892,16 +921,6 @@ h3 label
         pointer-events: auto;
     }
 }
-/*
-@keyframes showRight 
-{
-    100%
-    {
-        width: 0;
-    }
-
-}*/
-
 
 @keyframes homeBgText
 {
