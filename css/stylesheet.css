@@ -1218,7 +1218,7 @@ h3 span
     }
 
     .home-content .text-animate {
-        width: 30rem;
+        width: 29rem;
     }
 
     .home-btn
@@ -1234,6 +1234,11 @@ h3 span
     {   
         display: none;
     }
+
+    .socials {
+        margin-bottom: 80px;
+    }
+
 
     .heading {
         font-size: 4rem;
@@ -1277,7 +1282,7 @@ h3 span
     {
         0%,10%,100%
         {
-            background-position: -30rem 0;
+            background-position: -29rem 0;
         }
         65%,85%
         {
