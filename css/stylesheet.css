@@ -676,7 +676,7 @@ h3.skills
 {
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 2rem;
 }
 
 .services-row .services-column
@@ -914,7 +914,7 @@ h3 span
 /* ===== MEDIA QUERIES ===== */
 
 /* Tablet Devices (768px to 1023px) */
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1355px) {
 
     html {
         font-size: 55%;
@@ -958,7 +958,12 @@ h3 span
     }
 
     .services .services-row {
-        gap: 3rem;
+        gap: 2rem;
+    }
+
+    .services-row .services-column
+    {
+        flex: 1 1 45rem;
     }
 
     .carousel-container {
@@ -1103,6 +1108,10 @@ h3 span
     .services .services-row {
         flex-direction: column;
         gap: 2rem;
+    }
+
+    .services-row .services-column {
+    flex: 1 1 10rem;
     }
 
     .contact form .input-box .input-field {
