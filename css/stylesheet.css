@@ -970,6 +970,36 @@ h3 span
         margin-top: 50px;
         max-width: 100%;
     }
+
+    
+    @keyframes homeBgText
+    {
+        0%,10%,100%
+        {
+            background-position: -30rem 0;
+        }
+        65%,85%
+        {
+            background-position: 0 0;
+        }
+    }
+
+    @keyframes homeCursorText
+    {
+        0%,10%,100%
+        {
+            width: 0;
+        }
+        65%,78%,85%
+        {
+            width: 100%;
+            opacity: 1;
+        }
+        75%,81%
+        {
+            opacity: 0;
+        }
+    }
 }
 
 /* Mobile Devices (up to 767px) */
@@ -988,10 +1018,11 @@ h3 span
         left: 0;
         width: 100%;
         padding: 1rem 5%;
-        background: rgba(0, 0, 0, 0.5);
+        background: rgba(227, 0, 0, 0.5);
         display: none;
         flex-direction: column;
         transition: .3s;
+        text-align: center;
     }
 
     .navbar.active {
@@ -1015,15 +1046,19 @@ h3 span
     }
 
     .home-content h1 {
-        font-size: 4.5rem;
+        font-size: 5.5rem;
+    }
+
+    .home-content p {
+        font-size: 2.5rem;
     }
 
     .home-content .text-animate h3 {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     .home-content .text-animate {
-        width: 25rem;
+        width: 33rem;
     }
 
     .home-btn
@@ -1117,6 +1152,36 @@ h3 span
     .contact form .input-box .input-field {
         width: 100%;
     }
+
+    
+    @keyframes homeBgText
+    {
+        0%,10%,100%
+        {
+            background-position: -33rem 0;
+        }
+        65%,85%
+        {
+            background-position: 0 0;
+        }
+    }
+
+    @keyframes homeCursorText
+    {
+        0%,10%,100%
+        {
+            width: 0;
+        }
+        65%,78%,85%
+        {
+            width: 100%;
+            opacity: 1;
+        }
+        75%,81%
+        {
+            opacity: 0;
+        }
+    }
 }
 
 /* Small Mobile Devices (up to 480px) */
@@ -1139,18 +1204,21 @@ h3 span
         margin-top: -50px;
     }
 
-
-
     .home-content h1 {
         font-size: 5rem;
     }
 
+    .home-content p {
+        font-size: 2.4rem;
+    }
+
+
     .home-content .text-animate h3 {
-        font-size: 3rem;
+        font-size: 3.5rem;
     }
 
     .home-content .text-animate {
-        width: 25rem;
+        width: 30rem;
     }
 
     .home-btn
@@ -1204,11 +1272,12 @@ h3 span
         right: 15px;
     }
 
+    
     @keyframes homeBgText
     {
         0%,10%,100%
         {
-            background-position: -25rem 0;
+            background-position: -30rem 0;
         }
         65%,85%
         {
@@ -1232,6 +1301,7 @@ h3 span
             opacity: 0;
         }
     }
+
 }
 
 
